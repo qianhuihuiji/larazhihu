@@ -13,4 +13,3 @@ Route::post('/answers/{answer}/best', 'BestAnswersController@store')->name('best
 
 Route::delete('/answers/{answer}', 'AnswersController@destroy')->name('answers.destroy');
 
-Route::post('/answers/{answer}/up-votes', 'AnswerUpVotesController@store')->name('answer-up-votes.store');

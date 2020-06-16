@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use App\Answer;
-use App\Question;
+use App\Models\Answer;
+use App\Models\Question;
 use App\Policies\AnswerPolicy;
 use App\Policies\QuestionPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
