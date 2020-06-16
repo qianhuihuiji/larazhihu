@@ -117,7 +117,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/shared" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -144,9 +144,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.ExampleTest.testBasicTest">
+  <component name="RunManager" selected="PHPUnit.AnswerTest.can_know_it_if_voted_up">
+    <configuration name="AnswerTest.can_know_it_if_voted_up" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\AnswerTest" file="$PROJECT_DIR$/tests/Unit/AnswerTest.php" method="can_know_it_if_voted_up" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AnswerTest.can_vote_up_an_answer" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\AnswerTest" file="$PROJECT_DIR$/tests/Unit/AnswerTest.php" method="can_vote_up_an_answer" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="ExampleTest.testBasicTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\ExampleTest" file="$PROJECT_DIR$/tests/Feature/Questions/ViewQuestionsTest.php" method="testBasicTest" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UpVotesTest.authenticated_user_can_vote_up" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Answers\UpVotesTest" file="$PROJECT_DIR$/tests/Feature/Answers/UpVotesTest.php" method="authenticated_user_can_vote_up" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -155,6 +167,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.AnswerTest.can_know_it_if_voted_up" />
+        <item itemvalue="PHPUnit.AnswerTest.can_vote_up_an_answer" />
+        <item itemvalue="PHPUnit.UpVotesTest.authenticated_user_can_vote_up" />
         <item itemvalue="PHPUnit.ExampleTest.testBasicTest" />
       </list>
     </recent_temporary>
@@ -175,6 +190,7 @@
       <workItem from="1591710150684" duration="6157000" />
       <workItem from="1591791838896" duration="2050000" />
       <workItem from="1592261015052" duration="4452000" />
+      <workItem from="1592271771853" duration="3834000" />
     </task>
     <servers />
   </component>
