@@ -55,4 +55,32 @@ class Answer extends Model
     {
         return $this->votes('vote_up')->count();
     }
+
+    public function voteDown($user)
+    {
+        $attributes = ['user_id' => $user->id];
+
+        if (! $this->votes('vote_down')->where($attributes)->exists()) {
+            $this->votes('vote_down')->create(['user_id' => $user->id, 'type' => 'vote_down']);
+        }
+    }
+
+    public function cancelVoteDown($user)
+    {
+        $this->votes('vote_down')->where(['user_id' => $user->id, 'type' => 'vote_down'])->delete();
+    }
+
+    public function isVotedDown($user)
+    {
+        if (! $user) {
+            return false;
+        }
+
+        return !! $this->votes('vote_down')->where('user_id', $user->id)->count();
+    }
+
+    public function getDownVotesCountAttribute()
+    {
+        return $this->votes('vote_down')->count();
+    }
 }
