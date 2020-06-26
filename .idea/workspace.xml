@@ -14,6 +14,9 @@
       <executable />
     </execution>
   </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/resources/js/app.js" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="phpunit">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/filp/whoops" />
@@ -119,17 +122,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tests/Feature/Questions" />
-      <recent name="$PROJECT_DIR$/tests/Feature/Answers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/database/seeds" />
+      <recent name="$PROJECT_DIR$/resources/js/components" />
       <recent name="$PROJECT_DIR$/resources/views/shared" />
       <recent name="$PROJECT_DIR$/tests/Feature/Answers" />
       <recent name="$PROJECT_DIR$/tests/Unit" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/Feature/Questions" />
+      <recent name="$PROJECT_DIR$/tests/Feature/Answers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -144,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.AnswerTest.can_know_it_if_voted_up">
+  <component name="RunManager" selected="PHPUnit.DownVotesTest">
     <configuration name="AnswerTest.can_know_it_if_voted_up" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\AnswerTest" file="$PROJECT_DIR$/tests/Unit/AnswerTest.php" method="can_know_it_if_voted_up" scope="Method" />
       <method v="2" />
@@ -153,12 +159,16 @@
       <TestRunner class="Tests\Unit\AnswerTest" file="$PROJECT_DIR$/tests/Unit/AnswerTest.php" method="can_vote_up_an_answer" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="ExampleTest.testBasicTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ExampleTest" file="$PROJECT_DIR$/tests/Feature/Questions/ViewQuestionsTest.php" method="testBasicTest" scope="Method" />
+    <configuration name="DownVotesTest (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Answers\DownVotesTest" file="$PROJECT_DIR$/tests/Feature/Answers/DownVotesTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="UpVotesTest.authenticated_user_can_vote_up" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Answers\UpVotesTest" file="$PROJECT_DIR$/tests/Feature/Answers/UpVotesTest.php" method="authenticated_user_can_vote_up" scope="Method" />
+    <configuration name="DownVotesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\DownVotesTest" file="$PROJECT_DIR$/tests/Feature/Answers/DownVotesTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UpVotesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Answers\UpVotesTest" file="$PROJECT_DIR$/tests/Feature/Answers/UpVotesTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -167,10 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.DownVotesTest" />
+        <item itemvalue="PHPUnit.DownVotesTest (1)" />
+        <item itemvalue="PHPUnit.UpVotesTest" />
         <item itemvalue="PHPUnit.AnswerTest.can_know_it_if_voted_up" />
         <item itemvalue="PHPUnit.AnswerTest.can_vote_up_an_answer" />
-        <item itemvalue="PHPUnit.UpVotesTest.authenticated_user_can_vote_up" />
-        <item itemvalue="PHPUnit.ExampleTest.testBasicTest" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +201,9 @@
       <workItem from="1591710150684" duration="6157000" />
       <workItem from="1591791838896" duration="2050000" />
       <workItem from="1592261015052" duration="4452000" />
-      <workItem from="1592271771853" duration="9082000" />
+      <workItem from="1592271771853" duration="11201000" />
+      <workItem from="1592895506455" duration="7115000" />
+      <workItem from="1592997150925" duration="3095000" />
     </task>
     <servers />
   </component>

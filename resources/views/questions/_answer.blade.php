@@ -1,4 +1,5 @@
-<li class=" media" name="answer{{ $answer->id }}" id="answer{{ $answer->id }}">
+<answer :attributes="{{ $answer }}" inline-template>
+    <li class="media" name="answer{{ $answer->id }}" id="answer{{ $answer->id }}">
     <div class="media-left">
         <a href="#">
             <img class="media-object img-thumbnail mr-3" alt="{{ $answer->owner->name }}" src="https://cdn.learnku.com/uploads/images/202005/26/19192/mX9UwDEO9g.png!large" style="width:48px;height:48px;" />
@@ -39,5 +40,10 @@
         <div class="answer-content text-secondary">
             {{ $answer->content }}
         </div>
+
+        <small class="media-body meta text-secondary">
+            <answer-affect :answer="{{ $answer }}" v-if="signedIn"></answer-affect>
+        </small>
     </div>
 </li>
+</answer>
