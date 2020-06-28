@@ -3,13 +3,38 @@
 namespace App\Http\Controllers;
 
 use App\Models\Question;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class QuestionsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['show','index']);
+    }
+
     public function index()
     {
 
+    }
+
+    public function store()
+    {
+        $this->validate(request(), [
+            'title' => 'required',
+            'content' => 'required',
+            'category_id' => 'required',
+        ]);
+
+        $question = Question::create([
+            'user_id' => auth()->id(),
+            'category_id' => request('category_id'),
+            'title' => request('title'),
+            'content' => request('content'),
+            'published_at' => Carbon::now()
+        ]);
+
+        return redirect("/$question/$question->id");
     }
 
     public function show($questionId)

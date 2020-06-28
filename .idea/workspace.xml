@@ -126,15 +126,15 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/Feature/Questions" />
+      <recent name="$PROJECT_DIR$/tests/Feature/Answers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Models" />
       <recent name="$PROJECT_DIR$/database/seeds" />
       <recent name="$PROJECT_DIR$/resources/js/components" />
       <recent name="$PROJECT_DIR$/resources/views/shared" />
-      <recent name="$PROJECT_DIR$/tests/Feature/Answers" />
-      <recent name="$PROJECT_DIR$/tests/Unit" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tests/Feature/Questions" />
       <recent name="$PROJECT_DIR$/tests/Feature/Answers" />
     </key>
   </component>
@@ -150,13 +150,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.DownVotesTest">
+  <component name="RunManager" selected="PHPUnit.CreateQuestionsTest.content_is_required">
     <configuration name="AnswerTest.can_know_it_if_voted_up" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\AnswerTest" file="$PROJECT_DIR$/tests/Unit/AnswerTest.php" method="can_know_it_if_voted_up" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="AnswerTest.can_vote_up_an_answer" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\AnswerTest" file="$PROJECT_DIR$/tests/Unit/AnswerTest.php" method="can_vote_up_an_answer" scope="Method" />
+    <configuration name="CreateQuestionsTest.content_is_required" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Questions\CreateQuestionsTest" file="$PROJECT_DIR$/tests/Feature/Questions/CreateQuestionsTest.php" method="content_is_required" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="DownVotesTest (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -177,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.CreateQuestionsTest.content_is_required" />
         <item itemvalue="PHPUnit.DownVotesTest" />
         <item itemvalue="PHPUnit.DownVotesTest (1)" />
         <item itemvalue="PHPUnit.UpVotesTest" />
         <item itemvalue="PHPUnit.AnswerTest.can_know_it_if_voted_up" />
-        <item itemvalue="PHPUnit.AnswerTest.can_vote_up_an_answer" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +203,9 @@
       <workItem from="1592261015052" duration="4452000" />
       <workItem from="1592271771853" duration="11201000" />
       <workItem from="1592895506455" duration="7115000" />
-      <workItem from="1592997150925" duration="3095000" />
+      <workItem from="1592997150925" duration="8043000" />
+      <workItem from="1593308647470" duration="630000" />
+      <workItem from="1593349630248" duration="2296000" />
     </task>
     <servers />
   </component>
