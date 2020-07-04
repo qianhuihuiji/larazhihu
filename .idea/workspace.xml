@@ -120,7 +120,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Feature/Questions" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
@@ -131,11 +131,11 @@
       <recent name="$PROJECT_DIR$/tests/Feature/Answers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/Feature/Questions" />
+      <recent name="$PROJECT_DIR$/tests/Unit/Http/Middleware" />
       <recent name="$PROJECT_DIR$/app/Models" />
       <recent name="$PROJECT_DIR$/database/seeds" />
       <recent name="$PROJECT_DIR$/resources/js/components" />
-      <recent name="$PROJECT_DIR$/resources/views/shared" />
-      <recent name="$PROJECT_DIR$/tests/Feature/Answers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -205,7 +205,14 @@
       <workItem from="1592895506455" duration="7115000" />
       <workItem from="1592997150925" duration="8043000" />
       <workItem from="1593308647470" duration="630000" />
-      <workItem from="1593349630248" duration="2296000" />
+      <workItem from="1593349630248" duration="2963000" />
+      <workItem from="1593406636397" duration="2865000" />
+      <workItem from="1593474620732" duration="1932000" />
+      <workItem from="1593496568029" duration="1667000" />
+      <workItem from="1593527723237" duration="1732000" />
+      <workItem from="1593694226437" duration="232000" />
+      <workItem from="1593829917190" duration="328000" />
+      <workItem from="1593830328585" duration="5198000" />
     </task>
     <servers />
   </component>

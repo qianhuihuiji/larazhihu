@@ -56,4 +56,26 @@ class QuestionTest extends TestCase
         $this->assertInstanceOf('Illuminate\Database\Eloquent\Relations\BelongsTo', $question->creator());
         $this->assertInstanceOf('App\Models\User', $question->creator);
     }
+
+    /** @test */
+    public function can_publish_a_question()
+    {
+        $question = create(Question::class, ['published_at' => null]);
+
+        $this->assertCount(0, Question::published()->get());
+
+        $question->publish();
+
+        $this->assertCount(1, Question::published()->get());
+    }
+
+    /** @test */
+    public function it_can_detect_all_invited_users()
+    {
+        $question = create(Question::class, [
+            'content' => '@Jane @Luke please help me!'
+        ]);
+
+        $this->assertEquals(['Jane','Luke'], $question->invitedUsers());
+    }
 }

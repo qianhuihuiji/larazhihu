@@ -11,6 +11,8 @@ class QuestionsController extends Controller
     public function __construct()
     {
         $this->middleware('auth')->except(['show','index']);
+
+        $this->middleware('must-verify-email')->except(['index', 'show']);
     }
 
     public function index()
@@ -23,15 +25,14 @@ class QuestionsController extends Controller
         $this->validate(request(), [
             'title' => 'required',
             'content' => 'required',
-            'category_id' => 'required',
+            'category_id' => 'required|exists:categories,id',
         ]);
 
         $question = Question::create([
             'user_id' => auth()->id(),
             'category_id' => request('category_id'),
             'title' => request('title'),
-            'content' => request('content'),
-            'published_at' => Carbon::now()
+            'content' => request('content')
         ]);
 
         return redirect("/$question/$question->id");

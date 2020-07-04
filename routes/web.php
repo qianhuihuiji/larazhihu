@@ -1,10 +1,8 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Storage;
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/questions', 'QuestionsController@index');
 Route::post('/questions', 'QuestionsController@store')->name('questions.store');
@@ -21,4 +19,5 @@ Route::delete('/answers/{answer}/up-votes', 'AnswerUpVotesController@destroy')->
 Route::post('/answers/{answer}/down-votes', 'AnswerDownVotesController@store')->name('answer-down-votes.store');
 Route::delete('/answers/{answer}/down-votes', 'AnswerDownVotesController@destroy')->name('answer-down-votes.destroy');
 
+Route::post('/questions/{question}/published-questions', 'PublishedQuestionsController@store')->name('published-questions.store');
 
