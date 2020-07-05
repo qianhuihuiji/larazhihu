@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Question;
-use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class QuestionsController extends Controller
@@ -18,6 +18,16 @@ class QuestionsController extends Controller
     public function index()
     {
 
+    }
+
+    public function create(Question $question)
+    {
+        $categories = Category::all();
+
+        return view('questions.create', [
+            'question' => $question,
+            'categories' => $categories
+        ]);
     }
 
     public function store()
@@ -35,7 +45,7 @@ class QuestionsController extends Controller
             'content' => request('content')
         ]);
 
-        return redirect("/$question/$question->id");
+        return redirect("/questions/$question->id");
     }
 
     public function show($questionId)

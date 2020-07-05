@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Events\PublishQuestion;
 use App\Models\Question;
-use App\Models\User;
-use App\Notifications\YouWereInvited;
 use Illuminate\Http\Request;
 
 class PublishedQuestionsController extends Controller
@@ -22,5 +20,7 @@ class PublishedQuestionsController extends Controller
         $question->publish();
 
         event(new PublishQuestion($question));
+
+        return redirect("/questions/{$question->id}");
     }
 }

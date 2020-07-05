@@ -120,22 +120,22 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Feature/Questions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/drafts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/drafts" />
+      <recent name="$PROJECT_DIR$/tests/Feature/Questions" />
+      <recent name="$PROJECT_DIR$/resources/views/questions" />
+      <recent name="$PROJECT_DIR$/tests/Unit/Http/Middleware" />
+      <recent name="$PROJECT_DIR$/app/Models" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/Feature/Questions" />
       <recent name="$PROJECT_DIR$/tests/Feature/Answers" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tests/Feature/Questions" />
-      <recent name="$PROJECT_DIR$/tests/Unit/Http/Middleware" />
-      <recent name="$PROJECT_DIR$/app/Models" />
-      <recent name="$PROJECT_DIR$/database/seeds" />
-      <recent name="$PROJECT_DIR$/resources/js/components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -150,11 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.CreateQuestionsTest.content_is_required">
-    <configuration name="AnswerTest.can_know_it_if_voted_up" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\AnswerTest" file="$PROJECT_DIR$/tests/Unit/AnswerTest.php" method="can_know_it_if_voted_up" scope="Method" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.InviteUsersTest.all_invited_users_are_notified">
     <configuration name="CreateQuestionsTest.content_is_required" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\Questions\CreateQuestionsTest" file="$PROJECT_DIR$/tests/Feature/Questions/CreateQuestionsTest.php" method="content_is_required" scope="Method" />
       <method v="2" />
@@ -167,6 +163,10 @@
       <TestRunner class="Tests\Feature\DownVotesTest" file="$PROJECT_DIR$/tests/Feature/Answers/DownVotesTest.php" scope="Class" />
       <method v="2" />
     </configuration>
+    <configuration name="InviteUsersTest.all_invited_users_are_notified" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Questions\InviteUsersTest" file="$PROJECT_DIR$/tests/Feature/Questions/InviteUsersTest.php" method="all_invited_users_are_notified" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="UpVotesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\Answers\UpVotesTest" file="$PROJECT_DIR$/tests/Feature/Answers/UpVotesTest.php" scope="Class" />
       <method v="2" />
@@ -177,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.InviteUsersTest.all_invited_users_are_notified" />
         <item itemvalue="PHPUnit.CreateQuestionsTest.content_is_required" />
         <item itemvalue="PHPUnit.DownVotesTest" />
         <item itemvalue="PHPUnit.DownVotesTest (1)" />
         <item itemvalue="PHPUnit.UpVotesTest" />
-        <item itemvalue="PHPUnit.AnswerTest.can_know_it_if_voted_up" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +212,7 @@
       <workItem from="1593527723237" duration="1732000" />
       <workItem from="1593694226437" duration="232000" />
       <workItem from="1593829917190" duration="328000" />
-      <workItem from="1593830328585" duration="5198000" />
+      <workItem from="1593830328585" duration="17018000" />
     </task>
     <servers />
   </component>
