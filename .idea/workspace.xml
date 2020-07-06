@@ -120,22 +120,22 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/drafts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/questions" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/drafts" />
-      <recent name="$PROJECT_DIR$/tests/Feature/Questions" />
-      <recent name="$PROJECT_DIR$/resources/views/questions" />
-      <recent name="$PROJECT_DIR$/tests/Unit/Http/Middleware" />
-      <recent name="$PROJECT_DIR$/app/Models" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/Feature/Questions" />
       <recent name="$PROJECT_DIR$/tests/Feature/Answers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/questions" />
+      <recent name="$PROJECT_DIR$/tests/Feature/Questions" />
+      <recent name="$PROJECT_DIR$/resources/views/drafts" />
+      <recent name="$PROJECT_DIR$/tests/Unit/Http/Middleware" />
+      <recent name="$PROJECT_DIR$/app/Models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -150,25 +150,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.InviteUsersTest.all_invited_users_are_notified">
+  <component name="RunManager" selected="PHPUnit.ViewQuestionsTest.user_can_view_a_published_question">
     <configuration name="CreateQuestionsTest.content_is_required" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\Questions\CreateQuestionsTest" file="$PROJECT_DIR$/tests/Feature/Questions/CreateQuestionsTest.php" method="content_is_required" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="DownVotesTest (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Answers\DownVotesTest" file="$PROJECT_DIR$/tests/Feature/Answers/DownVotesTest.php" scope="Class" />
+    <configuration name="FilterQuestionsTest.a_user_can_filter_unanswered_questions" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FilterQuestionsTest" file="$PROJECT_DIR$/tests/Feature/Questions/FilterQuestionsTest.php" method="a_user_can_filter_unanswered_questions" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="DownVotesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\DownVotesTest" file="$PROJECT_DIR$/tests/Feature/Answers/DownVotesTest.php" scope="Class" />
+    <configuration name="FilterQuestionsTest.user_can_filter_questions_by_popularity" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FilterQuestionsTest" file="$PROJECT_DIR$/tests/Feature/Questions/FilterQuestionsTest.php" method="user_can_filter_questions_by_popularity" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="InviteUsersTest.all_invited_users_are_notified" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\Questions\InviteUsersTest" file="$PROJECT_DIR$/tests/Feature/Questions/InviteUsersTest.php" method="all_invited_users_are_notified" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UpVotesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Answers\UpVotesTest" file="$PROJECT_DIR$/tests/Feature/Answers/UpVotesTest.php" scope="Class" />
+    <configuration name="ViewQuestionsTest.user_can_view_a_published_question" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ViewQuestionsTest" file="$PROJECT_DIR$/tests/Feature/Questions/ViewQuestionsTest.php" method="user_can_view_a_published_question" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -177,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ViewQuestionsTest.user_can_view_a_published_question" />
+        <item itemvalue="PHPUnit.FilterQuestionsTest.a_user_can_filter_unanswered_questions" />
+        <item itemvalue="PHPUnit.FilterQuestionsTest.user_can_filter_questions_by_popularity" />
         <item itemvalue="PHPUnit.InviteUsersTest.all_invited_users_are_notified" />
         <item itemvalue="PHPUnit.CreateQuestionsTest.content_is_required" />
-        <item itemvalue="PHPUnit.DownVotesTest" />
-        <item itemvalue="PHPUnit.DownVotesTest (1)" />
-        <item itemvalue="PHPUnit.UpVotesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +212,8 @@
       <workItem from="1593527723237" duration="1732000" />
       <workItem from="1593694226437" duration="232000" />
       <workItem from="1593829917190" duration="328000" />
-      <workItem from="1593830328585" duration="17018000" />
+      <workItem from="1593830328585" duration="18160000" />
+      <workItem from="1594002605472" duration="12844000" />
     </task>
     <servers />
   </component>
