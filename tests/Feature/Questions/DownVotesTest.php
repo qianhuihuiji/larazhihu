@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature\Answers;
+namespace Tests\Feature\Questions;
 
 use App\Models\Answer;
 use App\Models\User;
