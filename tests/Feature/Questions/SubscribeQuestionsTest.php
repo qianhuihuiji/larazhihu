@@ -17,10 +17,10 @@ class SubscribeQuestionsTest extends TestCase
 
         $question = create(Question::class);
 
-        $this->post($question->path() . '/subscriptions')
+        $this->post('/questions/' . $question->id . '/subscriptions')
             ->assertRedirect('/login');
 
-        $this->delete($question->path() . '/subscriptions')
+        $this->delete('/questions/' . $question->id . '/subscriptions')
             ->assertRedirect('/login');
     }
 
@@ -29,18 +29,11 @@ class SubscribeQuestionsTest extends TestCase
     {
         $this->signIn();
 
-        $question = create(Question::class);
+        $question = factory(Question::class)->state('published')->create();
 
-        $this->post($question->path() . '/subscriptions');
+        $this->post('/questions/' . $question->id . '/subscriptions');
 
         $this->assertCount(1, $question->subscriptions);
-//
-//        $question->addAnswer([
-//            'user_id' => auth()->id(),
-//            'content' => 'This is a content'
-//        ]);
-//
-//        $this->assertCount(1, auth()->user()->refresh()->notifications);
     }
 
     /** @test */
@@ -48,10 +41,10 @@ class SubscribeQuestionsTest extends TestCase
     {
         $this->signIn();
 
-        $question = create(Question::class);
+        $question = factory(Question::class)->state('published')->create();
 
-        $this->post($question->path() . '/subscriptions');
-        $this->delete($question->path() . '/subscriptions');
+        $this->post('/questions/' . $question->id . '/subscriptions');
+        $this->delete('/questions/' . $question->id . '/subscriptions');
 
         $this->assertCount(0, $question->subscriptions);
     }

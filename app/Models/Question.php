@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Notifications\QuestionWasUpdated;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
@@ -36,6 +37,11 @@ class Question extends Model
         return $this->hasMany(Answer::class);
     }
 
+    public function subscriptions()
+    {
+        return $this->hasMany(Subscription::class);
+    }
+
     public function creator()
     {
         return $this->belongsTo(User::class, 'user_id');
@@ -60,5 +66,35 @@ class Question extends Model
         preg_match_all('/@([^\s.]+)/', $this->content,$matches);
 
         return $matches[1];
+    }
+
+    public function subscribe($userId)
+    {
+        $this->subscriptions()->create([
+            'user_id' => $userId
+        ]);
+
+        return $this;
+    }
+
+    public function unsubscribe($userId)
+    {
+        $this->subscriptions()
+            ->where('user_id', $userId)
+            ->delete();
+
+        return $this;
+    }
+
+    public function addAnswer($answer)
+    {
+        $answer = $this->answers()->create($answer);
+
+        $this->subscriptions
+            ->where('user_id', '!=', $answer->user_id)
+            ->each
+            ->notify($answer);
+
+        return $answer;
     }
 }

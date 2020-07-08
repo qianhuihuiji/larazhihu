@@ -120,22 +120,23 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Feature/Questions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Unit" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Models" />
       <recent name="$PROJECT_DIR$/tests/Feature/Questions" />
       <recent name="$PROJECT_DIR$/tests/Feature/Answers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/Unit" />
+      <recent name="$PROJECT_DIR$/tests/Feature" />
       <recent name="$PROJECT_DIR$/tests/Feature/Questions" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/resources/views/questions" />
-      <recent name="$PROJECT_DIR$/resources/views/drafts" />
-      <recent name="$PROJECT_DIR$/tests/Unit/Http/Middleware" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -213,7 +214,9 @@
       <workItem from="1593694226437" duration="232000" />
       <workItem from="1593829917190" duration="328000" />
       <workItem from="1593830328585" duration="18160000" />
-      <workItem from="1594002605472" duration="14770000" />
+      <workItem from="1594002605472" duration="16739000" />
+      <workItem from="1594090838138" duration="3871000" />
+      <workItem from="1594127315711" duration="3638000" />
     </task>
     <servers />
   </component>

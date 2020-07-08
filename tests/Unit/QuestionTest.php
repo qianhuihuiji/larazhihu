@@ -5,6 +5,7 @@ namespace Tests\Unit;
 use App\Models\Answer;
 use App\Models\Question;
 use App\Models\User;
+use App\Models\Subscription;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -77,7 +78,7 @@ class QuestionTest extends TestCase
             'content' => '@Jane @Luke please help me!'
         ]);
 
-        $this->assertEquals(['Jane','Luke'], $question->invitedUsers());
+        $this->assertEquals(['Jane', 'Luke'], $question->invitedUsers());
     }
 
     /** @test */
@@ -103,5 +104,60 @@ class QuestionTest extends TestCase
         create(Answer::class, ['question_id' => $question->id]);
 
         $this->assertEquals(1, $question->refresh()->answers_count);
+    }
+
+    /** @test */
+    public function a_question_has_many_subscriptions()
+    {
+        $question = create(Question::class);
+
+        create(Subscription::class, ['question_id' => $question->id], 2);
+
+        $this->assertInstanceOf('Illuminate\Database\Eloquent\Relations\HasMany', $question->subscriptions());
+    }
+
+    /** @test */
+    public function question_can_be_subscribed_to()
+    {
+        $user = create(User::class);
+        $question = create(Question::class, ['user_id' => $user->id]);
+
+        $question->subscribe($user->id);
+
+        $this->assertEquals(
+            1,
+            $question->subscriptions()->where('user_id', $user->id)->count()
+        );
+    }
+
+    /** @test */
+    public function question_can_be_unsubscribed_from()
+    {
+        $user = create(User::class);
+        $userId = $user->id;
+
+        $question = create(Question::class, ['user_id' => $userId]);
+
+        $question->subscribe($userId);
+
+        $question->unsubscribe($userId);
+
+        $this->assertEquals(
+            0,
+            $question->subscriptions()->where('user_id', $userId)->count()
+        );
+    }
+
+    /** @test */
+    public function question_can_add_answer()
+    {
+        $question = create(Question::class);
+
+        $question->addAnswer([
+            'content' => create(Answer::class)->content,
+            'user_id' => create(User::class)->id
+        ]);
+
+        $this->assertEquals(1, $question->refresh()->answers()->count());
     }
 }
