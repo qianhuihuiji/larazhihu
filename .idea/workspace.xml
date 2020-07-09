@@ -114,14 +114,16 @@
       <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/viacreative/sudo-su" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
     </include_path>
   </component>
   <component name="ProjectId" id="1cbn678xzze2REZeeVgAoHg7zYj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Unit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Unit/Translator" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
@@ -132,11 +134,11 @@
       <recent name="$PROJECT_DIR$/tests/Feature/Answers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/Unit/Translator" />
+      <recent name="$PROJECT_DIR$/app/Translator" />
       <recent name="$PROJECT_DIR$/tests/Unit" />
       <recent name="$PROJECT_DIR$/tests/Feature" />
       <recent name="$PROJECT_DIR$/tests/Feature/Questions" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
-      <recent name="$PROJECT_DIR$/resources/views/questions" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -151,7 +153,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.UpVotesTest">
+  <component name="RunManager" selected="PHPUnit.SubscribeQuestionsTest.can_know_it_if_subscribed_to">
     <configuration name="FilterQuestionsTest.a_user_can_filter_unanswered_questions" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\FilterQuestionsTest" file="$PROJECT_DIR$/tests/Feature/Questions/FilterQuestionsTest.php" method="a_user_can_filter_unanswered_questions" scope="Method" />
       <method v="2" />
@@ -160,8 +162,8 @@
       <TestRunner class="Tests\Feature\FilterQuestionsTest" file="$PROJECT_DIR$/tests/Feature/Questions/FilterQuestionsTest.php" method="user_can_filter_questions_by_popularity" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="InviteUsersTest.all_invited_users_are_notified" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Questions\InviteUsersTest" file="$PROJECT_DIR$/tests/Feature/Questions/InviteUsersTest.php" method="all_invited_users_are_notified" scope="Method" />
+    <configuration name="SubscribeQuestionsTest.can_know_it_if_subscribed_to" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Questions\SubscribeQuestionsTest" file="$PROJECT_DIR$/tests/Feature/Questions/SubscribeQuestionsTest.php" method="can_know_it_if_subscribed_to" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="UpVotesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -178,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.SubscribeQuestionsTest.can_know_it_if_subscribed_to" />
         <item itemvalue="PHPUnit.UpVotesTest" />
         <item itemvalue="PHPUnit.ViewQuestionsTest.user_can_view_a_published_question" />
         <item itemvalue="PHPUnit.FilterQuestionsTest.a_user_can_filter_unanswered_questions" />
         <item itemvalue="PHPUnit.FilterQuestionsTest.user_can_filter_questions_by_popularity" />
-        <item itemvalue="PHPUnit.InviteUsersTest.all_invited_users_are_notified" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +218,7 @@
       <workItem from="1593830328585" duration="18160000" />
       <workItem from="1594002605472" duration="16739000" />
       <workItem from="1594090838138" duration="3871000" />
-      <workItem from="1594127315711" duration="3638000" />
+      <workItem from="1594127315711" duration="16538000" />
     </task>
     <servers />
   </component>
