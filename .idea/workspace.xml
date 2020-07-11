@@ -121,7 +121,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models/Traits" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -129,11 +129,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Models/Traits" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/tests/Unit" />
       <recent name="$PROJECT_DIR$/tests/Feature/Comments" />
+      <recent name="$PROJECT_DIR$/app/Models/Traits" />
       <recent name="$PROJECT_DIR$/database/factories" />
-      <recent name="$PROJECT_DIR$/database/migrations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Models" />
@@ -153,13 +153,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.SubscribeQuestionsTest.can_know_it_if_subscribed_to">
-    <configuration name="FilterQuestionsTest.a_user_can_filter_unanswered_questions" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FilterQuestionsTest" file="$PROJECT_DIR$/tests/Feature/Questions/FilterQuestionsTest.php" method="a_user_can_filter_unanswered_questions" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.CommentCommentsTest.signed_in_user_can_comment_a_comment">
+    <configuration name="CommentCommentsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\CommentCommentsTest" file="$PROJECT_DIR$/tests/Feature/Comments/CommentCommentsTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="FilterQuestionsTest.user_can_filter_questions_by_popularity" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FilterQuestionsTest" file="$PROJECT_DIR$/tests/Feature/Questions/FilterQuestionsTest.php" method="user_can_filter_questions_by_popularity" scope="Method" />
+    <configuration name="CommentCommentsTest.signed_in_user_can_comment_a_comment" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\CommentCommentsTest" file="$PROJECT_DIR$/tests/Feature/Comments/CommentCommentsTest.php" method="signed_in_user_can_comment_a_comment" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CommentTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\CommentTest" file="$PROJECT_DIR$/tests/Unit/CommentTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="SubscribeQuestionsTest.can_know_it_if_subscribed_to" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -170,21 +174,17 @@
       <TestRunner class="Tests\Feature\Questions\UpVotesTest" file="$PROJECT_DIR$/tests/Feature/Questions/UpVotesTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="ViewQuestionsTest.user_can_view_a_published_question" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ViewQuestionsTest" file="$PROJECT_DIR$/tests/Feature/Questions/ViewQuestionsTest.php" method="user_can_view_a_published_question" scope="Method" />
-      <method v="2" />
-    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.CommentCommentsTest.signed_in_user_can_comment_a_comment" />
+        <item itemvalue="PHPUnit.CommentCommentsTest" />
+        <item itemvalue="PHPUnit.CommentTest" />
         <item itemvalue="PHPUnit.SubscribeQuestionsTest.can_know_it_if_subscribed_to" />
         <item itemvalue="PHPUnit.UpVotesTest" />
-        <item itemvalue="PHPUnit.ViewQuestionsTest.user_can_view_a_published_question" />
-        <item itemvalue="PHPUnit.FilterQuestionsTest.a_user_can_filter_unanswered_questions" />
-        <item itemvalue="PHPUnit.FilterQuestionsTest.user_can_filter_questions_by_popularity" />
       </list>
     </recent_temporary>
   </component>

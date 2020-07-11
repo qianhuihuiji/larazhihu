@@ -35,3 +35,5 @@ Route::get('/drafts', 'DraftsController@index');
 Route::post('/questions/{question}/comments', 'QuestionCommentsController@store')->name('question-comments.store');
 
 Route::post('/answers/{answer}/comments', 'AnswerCommentsController@store')->name('answer-comments.store');
+
+Route::post('/comments/{comment}/comments', 'CommentCommentsController@store')->name('comment-comments.store');
