@@ -7,12 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Answer extends Model
 {
     use \App\Models\Traits\VoteTrait;
+    use \App\Models\Traits\CommentTrait;
 
     protected $guarded = ['id'];
 
     protected $appends = [
         'upVotesCount',
         'downVotesCount',
+        'commentsCount',
     ];
 
     protected static function boot()
