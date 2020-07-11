@@ -15,6 +15,7 @@ class Question extends Model
     protected $appends = [
         'upVotesCount',
         'downVotesCount',
+        'subscriptionsCount',
     ];
 
     public function scopePublished($query)
