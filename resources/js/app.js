@@ -8,6 +8,8 @@ window.flash = function (message) {
     window.events.$emit('flash', message);
 };
 
+
+Vue.component('question', require('./components/Question').default);
 Vue.component('answer', require('./components/Answer').default);
 Vue.component('flash', require('./components/Flash').default);
 
