@@ -121,7 +121,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Feature/Comments" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -129,8 +129,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/tests/Feature/Comments" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/tests/Unit" />
       <recent name="$PROJECT_DIR$/app/Models/Traits" />
       <recent name="$PROJECT_DIR$/database/factories" />
@@ -153,7 +153,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.CommentCommentsTest.signed_in_user_can_comment_a_comment">
+  <component name="RunManager" selected="PHPUnit.ViewCommentsTest.can_request_all_comments_for_a_given_question">
     <configuration name="CommentCommentsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\CommentCommentsTest" file="$PROJECT_DIR$/tests/Feature/Comments/CommentCommentsTest.php" scope="Class" />
       <method v="2" />
@@ -170,8 +170,8 @@
       <TestRunner class="Tests\Feature\Questions\SubscribeQuestionsTest" file="$PROJECT_DIR$/tests/Feature/Questions/SubscribeQuestionsTest.php" method="can_know_it_if_subscribed_to" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UpVotesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Questions\UpVotesTest" file="$PROJECT_DIR$/tests/Feature/Questions/UpVotesTest.php" scope="Class" />
+    <configuration name="ViewCommentsTest.can_request_all_comments_for_a_given_question" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Comments\ViewCommentsTest" file="$PROJECT_DIR$/tests/Feature/Comments/ViewCommentsTest.php" method="can_request_all_comments_for_a_given_question" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -180,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ViewCommentsTest.can_request_all_comments_for_a_given_question" />
         <item itemvalue="PHPUnit.CommentCommentsTest.signed_in_user_can_comment_a_comment" />
         <item itemvalue="PHPUnit.CommentCommentsTest" />
         <item itemvalue="PHPUnit.CommentTest" />
         <item itemvalue="PHPUnit.SubscribeQuestionsTest.can_know_it_if_subscribed_to" />
-        <item itemvalue="PHPUnit.UpVotesTest" />
       </list>
     </recent_temporary>
   </component>
