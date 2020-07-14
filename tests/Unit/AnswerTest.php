@@ -4,7 +4,6 @@ namespace Tests\Unit;
 
 use App\Models\Answer;
 use App\Models\Comment;
-use App\Models\Question;
 use App\Models\User;
 use App\Models\Vote;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -14,6 +13,12 @@ use Tests\TestCase;
 class AnswerTest extends TestCase
 {
     use RefreshDatabase;
+    use AddCommentContractTest;
+
+    public function getCommentModel()
+    {
+        return create(Answer::class);
+    }
 
     /** @test */
     public function it_knows_if_it_is_the_best()

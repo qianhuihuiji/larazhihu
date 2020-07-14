@@ -8,6 +8,7 @@ class Comment extends Model
 {
     use \App\Models\Traits\CommentTrait;
     use \App\Models\Traits\VoteTrait;
+    use \App\Models\Traits\InvitedUsersTrait;
 
     protected $guarded = ['id'];
 
@@ -16,4 +17,14 @@ class Comment extends Model
         'downVotesCount',
         'commentsCount',
     ];
+
+    public function commented()
+    {
+        return $this->morphTo();
+    }
+
+    public function owner()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }

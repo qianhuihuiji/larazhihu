@@ -19,6 +19,12 @@ use Tests\TestCase;
 class QuestionTest extends TestCase
 {
     use RefreshDatabase;
+    use AddCommentContractTest;
+
+    public function getCommentModel()
+    {
+        return create(Question::class);
+    }
 
     /** @test */
     public function a_question_has_many_answers()
