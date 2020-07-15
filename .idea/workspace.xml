@@ -121,7 +121,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Unit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Feature" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -129,11 +129,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/Feature" />
       <recent name="$PROJECT_DIR$/tests/Unit" />
       <recent name="$PROJECT_DIR$/tests/Feature/Comments" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/app/Models/Traits" />
-      <recent name="$PROJECT_DIR$/database/factories" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Models" />
@@ -153,11 +153,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.MentionUsersTest.mentioned_users_are_notified_when_comment_a_question">
-    <configuration name="CommentCommentsTest.signed_in_user_can_comment_a_comment" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\CommentCommentsTest" file="$PROJECT_DIR$/tests/Feature/Comments/CommentCommentsTest.php" method="signed_in_user_can_comment_a_comment" scope="Method" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.RegistrationTest.name_just_contains_character_and_number_and_dash_and_underscore">
     <configuration name="CommentTest.a_comment_has_morph_to_attribute" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\CommentTest" file="$PROJECT_DIR$/tests/Unit/CommentTest.php" method="a_comment_has_morph_to_attribute" scope="Method" />
       <method v="2" />
@@ -170,8 +166,12 @@
       <TestRunner class="Tests\Unit\QuestionTest" file="$PROJECT_DIR$/tests/Unit/QuestionTest.php" method="an_event_is_dispatched_when_a_comment_a_question" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="ViewCommentsTest.can_request_all_comments_for_a_given_question" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Comments\ViewCommentsTest" file="$PROJECT_DIR$/tests/Feature/Comments/ViewCommentsTest.php" method="can_request_all_comments_for_a_given_question" scope="Method" />
+    <configuration name="RegistrationTest.name_is_required" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\RegistrationTest" file="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" method="name_is_required" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RegistrationTest.name_just_contains_character_and_number_and_dash_and_underscore" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\RegistrationTest" file="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" method="name_just_contains_character_and_number_and_dash_and_underscore" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -180,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.RegistrationTest.name_just_contains_character_and_number_and_dash_and_underscore" />
+        <item itemvalue="PHPUnit.RegistrationTest.name_is_required" />
         <item itemvalue="PHPUnit.MentionUsersTest.mentioned_users_are_notified_when_comment_a_question" />
         <item itemvalue="PHPUnit.CommentTest.a_comment_has_morph_to_attribute" />
         <item itemvalue="PHPUnit.QuestionTest.an_event_is_dispatched_when_a_comment_a_question" />
-        <item itemvalue="PHPUnit.ViewCommentsTest.can_request_all_comments_for_a_given_question" />
-        <item itemvalue="PHPUnit.CommentCommentsTest.signed_in_user_can_comment_a_comment" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +220,8 @@
       <workItem from="1594090838138" duration="3871000" />
       <workItem from="1594127315711" duration="16538000" />
       <workItem from="1594645132842" duration="3930000" />
-      <workItem from="1594729533384" duration="4948000" />
+      <workItem from="1594729533384" duration="7597000" />
+      <workItem from="1594789645070" duration="215000" />
     </task>
     <servers />
   </component>
