@@ -24,9 +24,10 @@
 
                 {{-- 答案列表 --}}
                 <div class="card question-reply mt-4">
+                    @includeWhen(Auth::check(),'questions._answer_box', ['question' => $question])
                     @if(count($answers) > 0)
                         <div class="card-body">
-                            @includeWhen(Auth::check(),'questions._answer_box', ['question' => $question])
+
                             @include('questions._answer_list', ['answers' => $answers])
 
                             <div class="mt-5">
