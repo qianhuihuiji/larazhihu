@@ -7,8 +7,6 @@ Route::get('/questions/{question}/comments', 'QuestionCommentsController@index')
 Route::post('/questions/{question}/comments', 'QuestionCommentsController@store')->name('question-comments.store');
 Route::get('/answers/{answer}/comments', 'AnswerCommentsController@index')->name('answer-comments.index');
 Route::post('/answers/{answer}/comments', 'AnswerCommentsController@store')->name('answer-comments.store');
-Route::get('/comments/{comment}/comments', 'CommentCommentsController@index')->name('comment-comments.index');
-Route::post('/comments/{comment}/comments', 'CommentCommentsController@store')->name('comment-comments.store');
 
 Route::get('/questions/{category?}', 'QuestionsController@index')->name('questions.index');
 Route::get('/questions/create', 'QuestionsController@create')->name('questions.create');

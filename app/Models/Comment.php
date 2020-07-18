@@ -2,20 +2,21 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
-    use \App\Models\Traits\CommentTrait;
     use \App\Models\Traits\VoteTrait;
     use \App\Models\Traits\InvitedUsersTrait;
 
     protected $guarded = ['id'];
 
+    protected $with = ['owner'];
+
     protected $appends = [
         'upVotesCount',
         'downVotesCount',
-        'commentsCount',
     ];
 
     public function commented()

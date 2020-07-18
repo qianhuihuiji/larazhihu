@@ -33,7 +33,7 @@ class PostAnswersTest extends TestCase
             'content' => 'This is a answer.'
         ]);
 
-        $response->assertStatus(201);
+        $response->assertStatus(302);
 
         $answer = $question->answers()->where('user_id', $user->id)->first();
         $this->assertNotNull($answer);

@@ -41,19 +41,4 @@ class ViewCommentsTest extends TestCase
         $this->assertCount(10, $response['data']);
         $this->assertEquals(40, $response['total']);
     }
-
-    /** @test */
-    public function can_request_all_comments_for_a_given_comment()
-    {
-        $comment = create(Comment::class);
-        create(Comment::class, [
-            'commented_id' => $comment->id,
-            'commented_type' => Comment::class
-        ], 40);
-
-        $response = $this->getJson(route('comment-comments.index', ['comment' => $comment]))->json();
-
-        $this->assertCount(10, $response['data']);
-        $this->assertEquals(40, $response['total']);
-    }
 }

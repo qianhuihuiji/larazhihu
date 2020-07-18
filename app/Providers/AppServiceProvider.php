@@ -20,7 +20,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Question::observe(QuestionObserver::class);
 
-        View::composer('*',function ($view){
+        \View::composer('*',function ($view){
             $view->with('categories', Category::all());
         });
 
