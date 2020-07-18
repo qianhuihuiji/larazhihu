@@ -8,33 +8,29 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Login Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles authenticating users for the application and
-    | redirecting them to your home screen. The controller uses a trait
-    | to conveniently provide its functionality to your applications.
-    |
-    */
-
     use AuthenticatesUsers;
+    use GiteeLoginTrait;
 
-    /**
-     * Where to redirect users after login.
-     *
-     * @var string
-     */
     protected $redirectTo = RouteServiceProvider::HOME;
 
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    public function redirectToProvider()
+    {
+        return redirect($this->getAuthUrl());
+    }
+
+    public function handleProviderCallback()
+    {
+        // 根据回调链接附带的授权码 code，请求码云获取访问 token
+        $token = $this->getAccessToken(request('code'));
+
+        // 根据 token 去码云获取用户信息
+        $user =  $this->getUserByToken($token['access_token']);
+
+        dd($user);
     }
 }

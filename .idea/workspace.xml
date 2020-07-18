@@ -114,16 +114,40 @@
       <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/viacreative/sudo-su" />
-      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
       <path value="$PROJECT_DIR$/vendor/php-webdriver/webdriver" />
       <path value="$PROJECT_DIR$/vendor/laravel/dusk" />
+      <path value="$PROJECT_DIR$/vendor/caouecs/laravel-lang" />
+      <path value="$PROJECT_DIR$/vendor/overtrue/laravel-lang" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/beyondcode/dusk-dashboard" />
+      <path value="$PROJECT_DIR$/vendor/react/dns" />
+      <path value="$PROJECT_DIR$/vendor/react/socket" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/react/promise-stream" />
+      <path value="$PROJECT_DIR$/vendor/react/http-client" />
+      <path value="$PROJECT_DIR$/vendor/react/promise-timer" />
+      <path value="$PROJECT_DIR$/vendor/react/cache" />
+      <path value="$PROJECT_DIR$/vendor/react/stream" />
+      <path value="$PROJECT_DIR$/vendor/react/event-loop" />
+      <path value="$PROJECT_DIR$/vendor/yosymfony/resource-watcher" />
+      <path value="$PROJECT_DIR$/vendor/cboden/ratchet" />
+      <path value="$PROJECT_DIR$/vendor/clue/buzz-react" />
+      <path value="$PROJECT_DIR$/vendor/ringcentral/psr7" />
+      <path value="$PROJECT_DIR$/vendor/ratchet/rfc6455" />
+      <path value="$PROJECT_DIR$/vendor/evenement/evenement" />
     </include_path>
   </component>
   <component name="ProjectId" id="1cbn678xzze2REZeeVgAoHg7zYj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models/Traits" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Auth" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -136,11 +160,11 @@
       <recent name="$PROJECT_DIR$/tests/Feature/Answers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Auth" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/Models/Traits" />
       <recent name="$PROJECT_DIR$/resources/js/components" />
       <recent name="$PROJECT_DIR$/resources/scripts/git-hooks" />
-      <recent name="$PROJECT_DIR$/tests/Feature" />
-      <recent name="$PROJECT_DIR$/tests/Unit" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -225,7 +249,7 @@
       <workItem from="1594729533384" duration="7597000" />
       <workItem from="1594789645070" duration="1651000" />
       <workItem from="1594950018403" duration="12970000" />
-      <workItem from="1594988904763" duration="7150000" />
+      <workItem from="1594988904763" duration="15103000" />
     </task>
     <servers />
   </component>

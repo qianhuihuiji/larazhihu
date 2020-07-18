@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 Auth::routes(['verify' => true]);
+
+Route::get('auth/gitee', 'Auth\LoginController@redirectToProvider')->name('gitee.auth');
+Route::get('auth/gitee/callback', 'Auth\LoginController@handleProviderCallback');
+
 Route::get('/questions/{question}/comments', 'QuestionCommentsController@index')->name('question-comments.index');
 Route::post('/questions/{question}/comments', 'QuestionCommentsController@store')->name('question-comments.store');
 Route::get('/answers/{answer}/comments', 'AnswerCommentsController@index')->name('answer-comments.index');

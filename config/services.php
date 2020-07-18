@@ -34,4 +34,10 @@ return [
         'appid' => env('BAIDU_TRANSLATE_APPID'),
         'key'   => env('BAIDU_TRANSLATE_KEY'),
     ],
+
+    'gitee' => [
+        'client_id' => env('GITEE_CLIENT_ID'),
+        'client_secret' => env('GITEE_CLIENT_SECRET'),
+        'redirect_uri' => env('GITEE_CALLBACK_URL'),
+    ],
 ];
